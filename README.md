@@ -1,16 +1,26 @@
-# Claude Certified Architect — Foundations (CCAR-F) Study Guide
+# CCAR-F (Claude Certified Architect — Foundations) Study Guide
 
-An open-source, domain-by-domain study guide and exam readiness checklist for the **Anthropic Claude Certified Architect — Foundations (CCAR-F)** certification (Dec 2026 blueprint).
+An open-source, domain-by-domain study guide, weight breakdown, and exam readiness checklist for the **Anthropic Claude Certified Architect — Foundations (CCAR-F)** certification (Dec 2026 blueprint).
 
-## Exam Overview
+## Exam Overview & Official 5-Domain Weighting
 
 | Parameter | Details |
 | :--- | :--- |
-| **Exam Code** | CCAR-F (Claude Certified Architect — Foundations) |
+| **Exam Code** | CCAR-F (also referenced as CCA-F in early community notes) |
 | **Exam Fee** | $125 USD |
 | **Passing Score** | 720 / 1,000 |
-| **Format** | 60 scenario-based multiple-choice questions |
+| **Format** | 60 scenario-based multiple-choice questions (120 minutes) |
 | **Prerequisites** | Hands-on experience building agentic workflows, Claude Code, MCP servers, and structured outputs |
+
+| Domain | Official Weight | Core Focus Areas |
+| :--- | :---: | :--- |
+| **1. Agentic Architecture & Orchestration** | **27%** | Multi-agent patterns, subagent context isolation, stop conditions, HITL gates |
+| **2. Claude Code Configuration & Workflows** | **20%** | `.claude/CLAUDE.md` hierarchy, slash commands, headless CI (`claude -p`), hooks |
+| **3. Prompt Engineering & Structured Output** | **20%** | `tool_use` / JSON Schema enforcement, few-shot calibration, extended thinking, XML isolation |
+| **4. Tool Design & MCP Integration** | **18%** | MCP Tools vs. Resources vs. Prompts, `.mcp.json`, `stdio` / Streamable HTTP, `isError` recovery |
+| **5. Context Management & Reliability** | **15%** | Prompt caching prefixes, compaction/summarization, eval suites, `429`/`529` backoff |
+
+> **Interactive Timed Mock & Sample Preview**: Try 3 free no-login CCAR-F sample questions or unlock full 5-domain-weighted timed mock exams (one-time $4.99 / $9.99, no subscription) at [AICertMock — CCAR-F Practice Exam](https://aicertmock.com/claude-certified-architect).
 
 ---
 
@@ -64,9 +74,9 @@ Covers long-horizon execution, caching, and observability.
 
 ## Practice & Diagnostic Resources
 
-- **Official Anthropic Exam Blueprint**: Review the official domain objectives and sample scenarios published by Anthropic.
-- **Free 10-Question CCAR-F Diagnostic**: [AI Cert Mock — Claude Certification Practice Exam](https://aicertmock.com/) offers a free, no-login 10-question diagnostic mapped to all 5 CCAR-F domains so you can identify weak areas before booking the $125 exam.
-- **MCP Specification**: Study the official Model Context Protocol docs for Tools, Resources, and Transport security.
+- **Official Anthropic Exam Blueprint**: Review the official domain objectives and sample scenarios published by Anthropic (`docs.anthropic.com`).
+- **Timed Mock Exams & Free Sample Preview**: [AICertMock — Claude Certified Architect (CCAR-F) Practice Exam](https://aicertmock.com/claude-certified-architect) provides 3 free no-login sample questions for quick preview, plus full-length timed mock exams weighted to the official 5 CCAR-F domains (one-time $4.99 / $9.99 unlock, no subscription).
+- **MCP Specification**: Study the official Model Context Protocol docs (`modelcontextprotocol.io`) for Tools, Resources, and Transport security.
 
 ## License
 
